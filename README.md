@@ -1,8 +1,47 @@
-# React + Vite
+# QR Code Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple web application that allows users to generate QR codes in real-time based on their input. Users can also download the generated QR codes as image files.
 
-Currently, two official plugins are available:
+## Features
+- Real-time QR code generation as you type.
+- QR code download functionality.
+- Clean and responsive design using Tailwind CSS.
+- Animated QR code generation for a better user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **Frontend**: React (with Vite)
+- **Styling**: Tailwind CSS
+- **QR Code Generation**: `qrcode` [NPM Package](https://www.npmjs.com/package/qrcode)
+
+- **Icons**: Heroicons
+
+# Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/igamanraj/QR-Code-Generator.git
+   cd QR-Code-Generator
+2. Install Dependencies
+   ```bash
+    npm install
+3. Start the development server : 
+    ```bash
+    npm run dev
+4. Open your browser and navigate to:
+    ```bash
+    http://localhost:5173
+# Usage
+
+1. Enter any text or URL in the input field to generate a QR code instantly.
+2. Watch the QR code animate and display in real-time.
+3. Click the Download button to save the QR code as an image file.
+
+## Demo
+
+Here are some screenshots of the QR Code Generator:
+
+### Homepage
+![Homepage](src/assets/demo.png)
+
+### QR Code Generation
+![QR Code Generation](src/assets/demovideo.gif)
