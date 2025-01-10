@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import QRCode from "qrcode";
+import Meteors from "./components/ui/meteors"
 
 const LiveQRCodeGenerator = () => {
   const [text, setText] = useState(""); // Input text
@@ -36,7 +37,9 @@ const LiveQRCodeGenerator = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-slate-900 font-sans">
+   <div>
+    <Meteors />
+     <div className="min-h-screen flex flex-col items-center justify-center bg-slate-900 font-sans">
       <h1 className="text-4xl font-bold mb-6 text-gray-200">
         Live QR Code Generator
       </h1>
@@ -82,13 +85,14 @@ const LiveQRCodeGenerator = () => {
       {qrCodeUrl && (
         <button
           onClick={downloadQRCode}
-          className="mt-4 px-4 py-2 bg-green-500 text-white font-medium rounded-md hover:bg-green-600"
+          className="mt-4 px-4 py-2 bg-green-500 text-white font-medium nded-md hover:bg-green-600"
         >
           Download QR Code
 
         </button>
       )}
     </div>
+   </div>
   );
 };
 
