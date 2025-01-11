@@ -37,10 +37,10 @@ const LiveQRCodeGenerator = () => {
   };
 
   return (
-   <div>
+   <div className="meteors-container">
     <Meteors />
      <div className="min-h-screen flex flex-col items-center justify-center bg-slate-900 font-sans">
-      <h1 className="text-4xl font-bold mb-6 text-gray-200">
+      <h1 className="text-3xl font-bold mb-6 text-gray-200">
         Live QR Code Generator
       </h1>
       <input
